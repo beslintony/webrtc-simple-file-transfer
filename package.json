@@ -1,0 +1,18 @@
+{
+  "name": "simple-file-transfer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"cd server && npm run dev\" \"cd client && npm run start\"",
+    "start": "concurrently --kill-others \"cd server && npm run start\" \"cd client && npm run start\""
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "7.6.0"
+  },
+  "dependencies": {
+    "i": "^0.3.7"
+  }
+}
